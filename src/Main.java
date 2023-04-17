@@ -19,7 +19,7 @@ public class Main {
             Задача 1
             С помощью цикла for выведите в консоль все числа от 1 до 10.
          */
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println("Итерация цикла " + i);
         }
         System.out.println();
@@ -43,7 +43,7 @@ public class Main {
            Задача 3
            Выведите в консоль все четные числа от 0 до 17.
          */
-        for (int i = 0; i <= 17; i++) {
+        for (int i = 0; i <= 17; i++) { // Можно решить по другому for (int i = 0; i <= 17; i + 2)
             if (i % 2 == 0) {
                 System.out.println("Четные числа " + i);
             }
@@ -135,9 +135,8 @@ public class Main {
             total = total + total/100;
             total = total + accumulation;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
-            System.out.println();
         }
-
+        System.out.println();
     }
 
     public static void task10 () {
