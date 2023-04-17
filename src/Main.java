@@ -8,6 +8,9 @@ public class Main {
         task5();// Задача 5
         task6();// Задача 6
         task7();// Задача 7
+        task8();// Задача 8
+        task9();// Задача 9
+        task10();// Задача 10
     }
 
     public static void task1 () {
@@ -97,6 +100,65 @@ public class Main {
             System.out.println(i);
         }
         System.out.println();
+    }
 
+    public static void task8 () {
+        System.out.println("Задача 8");
+        /*
+           Задача 8
+           Посчитайте с помощью цикла for сумму годовых накоплений, если каждый месяц
+           вы будете откладывать по 29 000 рублей «в банку». Выведите сумму накоплений
+           за каждый месяц в консоль в формате: «Месяц …, сумма накоплений равна … рублей».
+         */
+        int accumulation = 29000;
+        int total = 0;
+        for (int i = 0; i < 12; i++) {
+            total = total + accumulation;
+            System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
+        }
+        System.out.println();
+    }
+
+
+    public static void task9 () {
+        System.out.println("Задача 9");
+         /*
+           Задача 9
+           Перепишите решение задачи выше при условии, что деньги вы откладывать будете
+           не «в банку», а в банк под проценты — 12% годовых.
+           Выведите сумму накоплений за каждый месяц в консоль в формате:
+           «Месяц …, сумма накоплений равна … рублей».
+         */
+        int accumulation = 29000;
+        int total = 0;
+        for (int i = 0; i < 12; i++) {
+            total = total + total/100;
+            total = total + accumulation;
+            System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
+            System.out.println();
+        }
+
+    }
+
+    public static void task10 () {
+        System.out.println("Задача 10");
+         /*
+           Задача 10
+           Напишите программу, которая выводит в консоль таблицу умножения на 2:
+           2*1=2
+           2*2=4
+           2*3=6
+           2*4=8
+           2*5=10
+           2*6=12
+           2*7=14
+           2*8=16
+           2*9=18
+           2*10=20
+         */
+        int n = 2; // Указали переменную для которой хотим вывести таблицу умножения
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " * " + i + " = " + n * i);
+        }
     }
 }
