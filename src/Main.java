@@ -6,6 +6,8 @@ public class Main {
         task3();// Задача 3
         task4();// Задача 4
         task5();// Задача 5
+        task6();// Задача 6
+        task7();// Задача 7
     }
 
     public static void task1 () {
@@ -59,6 +61,42 @@ public class Main {
     }
 
     public static void task5 () {
+        /*
+           Задача 5
+           Напишите программу, которая выводит в консоль все високосные года, начиная с 1904 года до 2096.
+           В консоль результат должен выводиться в формате: «… год является високосным».
+         */
+        for (int year = 1904; year <= 2096; year = year + 4) {
+            System.out.println(year + " год является високосным");
+        }
+        System.out.println();
+    }
+
+
+    public static void task6 () {
+        System.out.println("Задача 6");
+        /*
+           Задача 6
+           Напишите программу, которая выводит в консоль последовательность чисел:
+           7 14 21 28 35 42 49 56 63 70 77 84 91 98
+         */
+        for (int i = 7; i < 100; i = i +7) {
+            System.out.println(i);
+        }
+        System.out.println();
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
+         /*
+           Задача 7
+           Напишите программу, которая выводит в консоль последовательность чисел:
+           1 2 4 8 16 32 64 128 256 512
+         */
+        for (int i = 1; i < 513; i = i * 2) {
+            System.out.println(i);
+        }
+        System.out.println();
 
     }
 }
